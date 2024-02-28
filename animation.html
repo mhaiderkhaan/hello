@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes bgchanger{
+            from {
+                background-color: red;
+            }
+            to {
+                background-color: yellow;
+            }
+        }
+
+        @keyframes bgchanger1{
+            0% {background-color: red;
+                top: 0px;
+                left: 0px;}
+            25% {background-color: yellow;
+                top: 0px;
+                left: 500px;}
+            50% {background-color: green;
+                top: 100px;
+                left: 500px;}
+            75% {background-color: blue;
+                top: 500px;
+                left: 0px;}
+            100% {background-color: rgb(225, 0, 221);
+                top: 0px;
+                left: 0px;}
+        }
+
+        #animate{
+            width: 100px;
+            height: 100px;
+            animation-fill-mode: backwards;
+            animation-direction: alternate;
+            animation-timing-function: ease-out;
+            animation: bgchanger1 5s linear 0s infinite alternate forwards ;
+            background-color: red;
+            position: absolute;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="animate"></div>
+</body>
+</html>
